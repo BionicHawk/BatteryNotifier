@@ -30,7 +30,7 @@ fn main() {
                     shown_almost = true;
                 }
 
-                if battery_status.percent == 100.0 && !shown_full {
+                if battery_status.percent >= 100.0 && !shown_full {
                     show_fully_charged();
                     shown_full = true;
                 }
